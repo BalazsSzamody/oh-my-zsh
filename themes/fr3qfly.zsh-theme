@@ -21,4 +21,3 @@ ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 $orange="\033[38;5;208m"
 $yellow="\033[38;5;11m"
-
