@@ -9,7 +9,7 @@ rbenv_version() {
 }
 
 PROMPT='
-%{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}      $(git_prompt_info)
+${HOSTNAME} %{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}      $(git_prompt_info)
 😎 $ '
 
 
