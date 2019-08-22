@@ -8,8 +8,10 @@ rbenv_version() {
   rbenv version 2>/dev/null | awk '{print $1}'
 }
 
+HOSTNAME = $HOST
+
 PROMPT='
-${HOSTNAME} %{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}      $(git_prompt_info)
+$(hostname) %{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}      $(git_prompt_info)
 😎 $ '
 
 
@@ -18,6 +20,3 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}\033[38;5;208m  >%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}!"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[green]%}?"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
-
-$orange="\033[38;5;208m"
-$yellow="\033[38;5;11m"
